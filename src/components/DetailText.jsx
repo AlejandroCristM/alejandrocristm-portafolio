@@ -1,60 +1,51 @@
 import React from "react";
 
 export default function detailText({ detail, color, textColor }) {
+  var textStyle =
+    "font-semibold text-platinium px-1.5 py-2.5 mx-2 rounded mt-2";
 
-    var textStyle="font-semibold text-platinium px-1.5 py-2.5 mx-2 rounded mt-2";
-    
-    switch (color) {
+  switch (color) {
+    case "blue":
+      textStyle += " bg-blue-prussian";
+      break;
 
-        case "blue":
-            textStyle+=" bg-blue-prussian";
-            break;
-        
-        case "orange":
-            textStyle+=" bg-orange-web";
-            break;
+    case "orange":
+      textStyle += " bg-orange-web";
+      break;
 
-        case "green":
-            textStyle+=" bg-green-slimy";
-            break;
+    case "green":
+      textStyle += " bg-green-slimy";
+      break;
 
-        case "platinium":
-            textStyle+=" bg-platinium";
-            break;
-    
-        default:
-            break;
-    }
+    case "platinium":
+      textStyle += " bg-platinium";
+      break;
 
-    switch (textColor) {
+    default:
+      break;
+  }
 
-        case "blue":
-            textStyle+=" text-blue-prussian";
-            break;
-        
-        case "orange":
-            textStyle+=" text-orange-web";
-            break;
+  switch (textColor) {
+    case "blue":
+      textStyle += " text-blue-prussian";
+      break;
 
-        case "green":
-            textStyle+=" text-green-slimy";
-            break;
+    case "orange":
+      textStyle += " text-orange-web";
+      break;
 
-        case "platinium":
-            textStyle+=" text-platinium";
-            break;
-    
-        default:
-            textStyle+=" text-black";
-            break;
-    }
+    case "green":
+      textStyle += " text-green-slimy";
+      break;
 
-    
+    case "platinium":
+      textStyle += " text-platinium";
+      break;
 
-    return(
-        <span className={textStyle}>
-            {detail}
-        </span>
-    );
+    default:
+      textStyle += " text-black";
+      break;
+  }
 
+  return <span className={textStyle}>{detail}</span>;
 }

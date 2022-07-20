@@ -1,7 +1,6 @@
 import React from "react";
 import IconText from "./IconText";
-import { GoMarkGithub, GoMail, GoBriefcase} from "react-icons/go";
-
+import { GoMarkGithub, GoMail, GoBriefcase } from "react-icons/go";
 
 export default function Footer() {
   return (

@@ -1,10 +1,9 @@
 import React from "react";
 
-export default function IconText({ icon, text, link, sw}) {
+export default function IconText({ icon, text, link, sw }) {
+  //sw => bool which specify if the title component is responsive
 
-  //sw => bool which specify if the title component is responsive 
-
-  if(sw){
+  if (sw) {
     return (
       <div className="flex w-full justify-center">
         <a href={link} target="_blank" rel="noreferrer">
@@ -14,27 +13,27 @@ export default function IconText({ icon, text, link, sw}) {
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="ml-6 hidden md:inline"
+          className="ml-6 hidden md:inline font-semibold text-base"
         >
           {text}
         </a>
       </div>
     );
   }
-  
-  return(
+
+  return (
     <div className="flex w-full justify-center">
-        <a href={link} target="_blank" rel="noreferrer">
-          {icon}
-        </a>
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="ml-6"
-        >
-          {text}
-        </a>
-      </div>
+      <a href={link} target="_blank" rel="noreferrer">
+        {icon}
+      </a>
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="ml-6 font-semibold text-base"
+      >
+        {text}
+      </a>
+    </div>
   );
 }

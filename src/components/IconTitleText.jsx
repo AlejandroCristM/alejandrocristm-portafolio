@@ -2,13 +2,23 @@ import React from 'react'
 import IconText from './IconText'
 import {GoMortarBoard, GoCode, GoVerified} from "react-icons/go";
 
-export default function IconTitleText({icon, title, desc, color, details, colorText}) {
+export default function IconTitleText({icon, title, desc, color, details, colorText, size}) {
   
+  /*
+  This component return a component which contains an icon, title,
+  description, details, main color, color text and a size 
+
+  Icons, main color and color text are predefined but can be changed and be added
+  title, desc and details are strings
+  size is a number waited in px
+  */
+
+
   const iconToUse=()=>{
 
     var iconStyle="h-5 w-5"
-    if(colorText=='platinium'){
-      iconStyle+=" text-white"
+    if(colorText==='platinium' ){
+      iconStyle+=" text-platinium"
     }
 
     switch(icon){
@@ -42,7 +52,7 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
     }
   };
 
-  var stylesComponent ="rounded w-64 p-3 my-2"
+  var stylesComponent ="overflow-hidden rounded w-64 p-3 my-2 mx-3 min-w-[240px] "
 
   switch (color) {
     case "blue":
@@ -88,13 +98,17 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
       break;
   }
 
+  if(size){
+    stylesComponent+= " min-h-["+size+"px]"
+  }
+
   return (
     <div className={stylesComponent}>
       <span>
         {iconToUse()}
       </span>
-      <p className="mt-2">{details}</p>
-      <p className="mt-1">{desc}</p>
+      <p className="mt-3 text-base font-semibold">{details}</p>
+      <p className="mt-1 text-sm text-center">{desc}</p>
     </div>
   )
 }
