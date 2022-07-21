@@ -48,11 +48,11 @@ export default function CertificationInfo() {
   });
 
   return (
-    <section className="flex flex-col m-auto p-auto items-center bg-gradient-to-b from-blue-prussian to-white md:bg-gradient-to-b md:from-black md:to-white">
+    <section className="flex flex-col w-full p-auto items-center bg-gradient-to-b from-blue-prussian to-white md:bg-gradient-to-b md:from-black md:to-white">
       <h1 className="text-l mt-5 py-3 font-bold text-platinium">
         Certificaciones
       </h1>
-      <div className=" flex flex-no-wrap w-screen overflow-x-scroll scrolling-touch items-start mb-4 pb-2 md:flex-wrap md:justify-center md:align-center">
+      <div className=" flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-start mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-hidden">
         {certifications}
       </div>
     </section>
