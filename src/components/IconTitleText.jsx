@@ -52,7 +52,7 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
     }
   };
 
-  var stylesComponent ="overflow-hidden rounded w-64 p-3 my-2 mx-3 min-w-[240px] "
+  var stylesComponent ="overflow-hidden rounded w-64 p-3 my-2 mx-3 min-w-[240px]"
 
   switch (color) {
     case "blue":
@@ -99,7 +99,7 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
   }
 
   if(size){
-    stylesComponent+= " min-h-["+size+"px] "
+    stylesComponent+= " min-h-["+size+"px]"
   }
 
   return (

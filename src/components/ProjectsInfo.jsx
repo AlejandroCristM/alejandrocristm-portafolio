@@ -37,7 +37,7 @@ export default function ProjectsInfo() {
         desc={project.desc}
         color="platinium"
         details={project.year}
-        size="200"
+        size="220"
       />
     );
   });
