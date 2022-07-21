@@ -3,7 +3,7 @@ import IconTitleText from "./IconTitleText";
 
 export default function AcademicInfo() {
   return (
-    <section className="mt-10 text-center bg-gradient-to-b from-white to-black md:bg-none md:mt-12">
+    <section className="mt-10 text-center bg-gradient-to-b from-white to-black md:bg-none md:mt-16 lg:mt-20">
       <h1 className="text-l mt-5 py-3 font-bold">Información académica</h1>
       
       <div className="flex flex-col items-center">

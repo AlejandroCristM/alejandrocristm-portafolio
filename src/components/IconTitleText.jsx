@@ -99,7 +99,7 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
   }
 
   if(size){
-    stylesComponent+= " min-h-["+size+"px]"
+    stylesComponent+= " min-h-["+size+"px] "
   }
 
   return (

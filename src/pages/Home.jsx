@@ -9,15 +9,19 @@ export default function Home() {
   return (
     <section className="font-sans">
       <section className="flex flex-col md:flex-row">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 lg:w-2/3">
           <PerfilInfo />
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 lg:w-1/3">
           <AcademicInfo />
-          <InterestInfo />
+          <div className="lg:hidden">
+            <InterestInfo />
+          </div>
         </div>
       </section>
-
+      <div className="hidden lg:block">
+        <InterestInfo />
+      </div>
       <article>
         <ProjectsInfo />
       </article>
