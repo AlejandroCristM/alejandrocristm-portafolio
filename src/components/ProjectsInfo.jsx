@@ -37,7 +37,7 @@ export default function ProjectsInfo() {
         desc={project.desc}
         color="platinium"
         details={project.year}
-        size="220"
+        size="min-h-[220px]"
       />
     );
   });
@@ -47,7 +47,7 @@ export default function ProjectsInfo() {
       <h1 className="text-l mt-5 py-3 font-bold text-platinium md:text-black">
         Proyectos
       </h1>
-      <div className=" flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-start mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-auto">
+      <div className=" flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-center mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-auto">
         {projects}
       </div>
     </section>

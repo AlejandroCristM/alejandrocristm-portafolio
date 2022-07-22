@@ -43,6 +43,7 @@ export default function CertificationInfo() {
         desc={cert.desc}
         color="green"
         colorText="platinium"
+        size="min-h-[100px]"
       />
     );
   });
@@ -52,7 +53,7 @@ export default function CertificationInfo() {
       <h1 className="text-l mt-5 py-3 font-bold text-platinium">
         Certificaciones
       </h1>
-      <div className=" flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-start mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-hidden">
+      <div className=" flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-center mb-4 pb-2 items-center md:flex-wrap md:justify-center md:align-center md:overflow-hidden">
         {certifications}
       </div>
     </section>

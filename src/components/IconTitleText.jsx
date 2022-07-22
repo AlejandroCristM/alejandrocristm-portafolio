@@ -99,7 +99,11 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
   }
 
   if(size){
-    stylesComponent+= " min-h-["+size+"px]"
+    stylesComponent+= " "+size;
+    /* 
+      wasn't able to use just the pixels quantity cause the browser
+      so, now size is a relevant tailwind instruction to manage the component size 
+    */
   }
 
   return (
