@@ -6,7 +6,7 @@ export default function CertificationInfo() {
     {
       id: 1,
       title: "Blockchain basics",
-      desc: "Coursera - 2018",
+      desc: "Coursera - University at Buffallo - 2018",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function CertificationInfo() {
     {
       id: 4,
       title: "JS - Básico",
-      desc: "Coursera - 2021",
+      desc: "Platzi - 2021",
     },
     {
       id: 5,
