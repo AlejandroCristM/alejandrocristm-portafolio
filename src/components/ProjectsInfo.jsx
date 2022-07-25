@@ -1,5 +1,5 @@
 import React from 'react';
-import IconTitleText from 'component/IconTitleText';
+import IconTitleText from 'components/IconTitleText';
 
 export default function ProjectsInfo() {
   const projects = [

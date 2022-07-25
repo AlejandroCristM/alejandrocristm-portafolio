@@ -1,5 +1,5 @@
 import React from 'react';
-import DetailText from 'component/DetailText';
+import DetailText from 'components/DetailText';
 
 export default function InterestInfo() {
   const interests = [

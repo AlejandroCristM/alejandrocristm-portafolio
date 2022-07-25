@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoMortarBoard, GoCode, GoVerified } from 'react-icons/go';
-import IconText from 'component/IconText';
+import IconText from 'components/IconText';
 
 export default function IconTitleText({
   icon,

@@ -2,7 +2,7 @@ import React from 'react';
 import { GoMarkGithub, GoMail, GoBriefcase } from 'react-icons/go';
 import foto from 'assets/images/Me.jpeg';
 import 'styles/PerfilInfo.css';
-import DetailText from 'component/DetailText';
+import DetailText from 'components/DetailText';
 
 export default function PerfilInfo() {
   const birthDate = new Date('01/05/2002');
