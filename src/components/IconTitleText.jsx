@@ -1,9 +1,16 @@
-import React from 'react'
-import IconText from './IconText'
-import {GoMortarBoard, GoCode, GoVerified} from "react-icons/go";
+import React from 'react';
+import { GoMortarBoard, GoCode, GoVerified } from 'react-icons/go';
+import IconText from 'component/IconText';
 
-export default function IconTitleText({icon, title, desc, color, details, colorText, size}) {
-  
+export default function IconTitleText({
+  icon,
+  title,
+  desc,
+  color,
+  details,
+  colorText,
+  size,
+}) {
   /*
   This component return a component which contains an icon, title,
   description, details, main color, color text and a size 
@@ -13,18 +20,15 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
   size is a number waited in px
   */
 
-
-  const iconToUse=()=>{
-
-    var iconStyle="h-5 w-5"
-    if(colorText==='platinium' ){
-      iconStyle+=" text-platinium"
+  const iconToUse = () => {
+    let iconStyle = 'h-5 w-5';
+    if (colorText === 'platinium') {
+      iconStyle += ' text-platinium';
     }
 
-    switch(icon){
-
+    switch (icon) {
       case 'academic':
-        return(
+        return (
           <IconText
             icon={<GoMortarBoard className={iconStyle} />}
             text={title}
@@ -32,74 +36,69 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
         );
 
       case 'project':
-        return(
-          <IconText
-            icon={<GoCode className={iconStyle} />}
-            text={title}
-          />
+        return (
+          <IconText icon={<GoCode className={iconStyle} />} text={title} />
         );
 
       case 'certification':
-        return(
-          <IconText
-            icon={<GoVerified className={iconStyle} />}
-            text={title}
-          />
+        return (
+          <IconText icon={<GoVerified className={iconStyle} />} text={title} />
         );
 
       default:
-        return(<p>Bad component implementation"</p>)
+        return <p>Bad component implementation</p>;
     }
   };
 
-  var stylesComponent ="overflow-hidden rounded w-64 p-3 my-2 mx-3 min-w-[240px]"
+  let stylesComponent =
+    'overflow-hidden rounded w-64 p-3 my-2 mx-3 min-w-[240px]';
 
   switch (color) {
-    case "blue":
-      stylesComponent+=" bg-blue-prussian";
+    case 'blue':
+      stylesComponent += ' bg-blue-prussian';
       break;
 
-    case "green":
-      stylesComponent+=" bg-green-slimy";
+    case 'green':
+      stylesComponent += ' bg-green-slimy';
       break;
 
-    case "orange":
-      stylesComponent+=" bg-orange-web";
+    case 'orange':
+      stylesComponent += ' bg-orange-web';
       break;
 
-    case "platinium":
-      stylesComponent+=" bg-platinium";
+    case 'platinium':
+      stylesComponent += ' bg-platinium';
       break;
-    
+
     default:
-      stylesComponent+=" bg-black";
+      stylesComponent += ' bg-black';
       break;
   }
 
   switch (colorText) {
-    case "blue":
-      stylesComponent+=" text-blue-prussian";
+    case 'blue':
+      stylesComponent += ' text-blue-prussian';
       break;
 
-    case "green":
-      stylesComponent+= " text-green-slimy";
+    case 'green':
+      stylesComponent += ' text-green-slimy';
       break;
 
-    case "orange":
-      stylesComponent+= " text-orange-web";
+    case 'orange':
+      stylesComponent += ' text-orange-web';
       break;
 
-    case "platinium":
-      stylesComponent+=" text-platinium";
+    case 'platinium':
+      stylesComponent += ' text-platinium';
       break;
 
     default:
-      stylesComponent+=" text-black";
+      stylesComponent += ' text-black';
       break;
   }
 
-  if(size){
-    stylesComponent+= " "+size;
+  if (size) {
+    stylesComponent += ` ${size}`;
     /* 
       wasn't able to use just the pixels quantity cause the browser
       so, now size is a relevant tailwind instruction to manage the component size 
@@ -108,11 +107,9 @@ export default function IconTitleText({icon, title, desc, color, details, colorT
 
   return (
     <div className={stylesComponent}>
-      <span>
-        {iconToUse()}
-      </span>
-      <p className="mt-3 text-base font-semibold">{details}</p>
-      <p className="mt-1 text-sm text-center">{desc}</p>
+      <span>{iconToUse()}</span>
+      <p className='mt-3 text-base font-semibold'>{details}</p>
+      <p className='mt-1 text-sm text-center'>{desc}</p>
     </div>
-  )
+  );
 }
