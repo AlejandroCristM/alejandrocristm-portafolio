@@ -11,7 +11,7 @@ export default function AcademicInfo() {
           icon='academic'
           title='Bachiller académico'
           color='blue'
-          desc='Gimnasio camprestre - 2018'
+          desc='Gimnasio campestre - 2018'
           colorText='platinium'
         />
         <IconTitleText
