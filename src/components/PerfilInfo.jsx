@@ -1,10 +1,17 @@
 import React from 'react';
-import { GoMarkGithub, GoMail, GoBriefcase } from 'react-icons/go';
+import { GoMarkGithub } from 'react-icons/go';
+import { BsLinkedin } from 'react-icons/bs';
+import { SiGmail } from 'react-icons/si';
+
 import foto from 'assets/images/Me.jpeg';
 import 'styles/PerfilInfo.css';
 import DetailText from 'components/DetailText';
 
+import { useTranslation } from 'react-i18next';
+
 export default function PerfilInfo() {
+  const { t } = useTranslation();
+
   const birthDate = new Date('01/05/2002');
   const todayDate = new Date();
 
@@ -14,7 +21,7 @@ export default function PerfilInfo() {
 
   return (
     <section className='flex flex-col text-center lg:flex-row'>
-      <section className='flex flex-col lg:w-3/5'>
+      <section className='flex flex-col lg:w-2/3'>
         <h1 className='text-xl mt-14 font-bold'>Alejandro Cristancho Medina</h1>
         <picture className='flex flex-col items-center rounded-full px-5'>
           <img
@@ -23,7 +30,7 @@ export default function PerfilInfo() {
             alt='Foto personal'
           />
         </picture>
-        <h3 className='mt-2'>{`${totalYears} años`}</h3>
+        <h3 className='mt-2'>{`${totalYears} ${t('age')}`}</h3>
         <div className='flex font-medium justify-center mt-3'>
           <a
             href='https://github.com/AlejandroCristM'
@@ -33,27 +40,20 @@ export default function PerfilInfo() {
             <GoMarkGithub className='icon text-black' />
           </a>
           <a href='/' target='_blank' rel='noreferrer'>
-            <GoMail className='icon text-black' />
+            <SiGmail className='icon text-black' />
           </a>
           <a
             href='https://www.linkedin.com/in/alejandrocristm/'
             target='_blank'
             rel='noreferrer'
           >
-            <GoBriefcase className='icon text-black' />
+            <BsLinkedin className='icon text-black' />
           </a>
         </div>
       </section>
-      <section className='flex flex-col lg:w-2/5 lg:mt-24'>
+      <section className='flex flex-col mt-2 lg:max-w-xs lg:w-2/5 lg:mt-24'>
         <article className='flex w-full justify-center leading-tight'>
-          <p className='w-3/4 mt-2 md:w-3/5 lg:w-full'>
-            Soy estudiante de cuarto año universitario, caracterizado por la
-            disciplina, trabajo en equipo, persistencia y curiosidad por
-            aprender y mejorar mis habilidades. Mi experiencia se basa en
-            diferentes tipos de proyectos y cursos universitarios, en los cuales
-            he logrado excelentes rendimientos, de igual manera en cursos de
-            plataformas autodidactas.
-          </p>
+          <p className='w-3/4 mt-2 md:w-3/5 lg:w-full'>{t('textAboutMe')}</p>
         </article>
         <div className='flex justify-center mt-5'>
           <DetailText detail='Ingles' color='blue' textColor='platinium' />

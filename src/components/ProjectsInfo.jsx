@@ -1,7 +1,9 @@
 import React from 'react';
 import IconTitleText from 'components/IconTitleText';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsInfo() {
+  const { t } = useTranslation();
   const projects = [
     {
       id: 1,
@@ -18,7 +20,7 @@ export default function ProjectsInfo() {
     {
       id: 3,
       title: 'Onboarding platform',
-      year: '2022 - act',
+      year: '2022',
       desc: '(Proyecto integrador con empresa) Sistema útil para onboarding de personal nuevo, principalmente información de la empresa, temas y conceptos claves para su trabajo.',
     },
     {
@@ -26,6 +28,12 @@ export default function ProjectsInfo() {
       title: 'Portafolio personal',
       year: '2021-act',
       desc: 'Página web desarrollada como objetivo personal con la finalidad de construir una tarjeta de presentación para alejandrocristm',
+    },
+    {
+      id: 5,
+      title: 'NFT marketplace',
+      year: '2021-2023',
+      desc: '(Proyecto integrador con empresa) Proyecto para compra y venta de NFTs, integrando smart contracts y tecnologías Blockchain',
     },
   ].map((project) => (
     <IconTitleText
@@ -43,7 +51,7 @@ export default function ProjectsInfo() {
   return (
     <section className='flex flex-col w-full items-center bg-gradient-to-b from-black to-blue-prussian md:bg-gradient-to-b md:from-white md:to-black md:mt-10'>
       <h1 className='text-l mt-5 py-3 font-bold text-platinium md:text-black'>
-        Proyectos
+        {t('sectionTitles.projects')}
       </h1>
       <div className=' flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-center mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-auto'>
         {projects}

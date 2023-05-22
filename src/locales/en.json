@@ -1,0 +1,11 @@
+{
+    "age": "years old",
+    "textAboutMe":"I am a final year university student, characterized by discipline, teamwork, persistence, and curiosity to learn and improve my skills. My experience is based on various types of projects and university courses in which I have achieved excellent performance. I have also taken self-taught courses on online platforms.",
+    "sectionTitles":{
+        "academic":"Academic information",
+        "interest": "Interests",
+        "workExp": "Work experience",
+        "projects": "Projects",
+        "certifications": "certifications"
+    }
+}

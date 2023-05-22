@@ -1,5 +1,7 @@
 import React from 'react';
-import { GoMarkGithub, GoMail, GoBriefcase } from 'react-icons/go';
+import { GoMarkGithub } from 'react-icons/go';
+import { BsLinkedin } from 'react-icons/bs';
+import { SiGmail } from 'react-icons/si';
 import IconText from 'components/IconText';
 
 export default function Footer() {
@@ -12,12 +14,12 @@ export default function Footer() {
         sw='true'
       />
       <IconText
-        icon={<GoMail className='h-5 w-5 text-black' />}
+        icon={<SiGmail className='h-5 w-5 text-black' />}
         text='alejandrocristm@gmail.com'
         sw='true'
       />
       <IconText
-        icon={<GoBriefcase className='h-5 w-5 text-black' />}
+        icon={<BsLinkedin className='h-5 w-5 text-black' />}
         text='LinkedIn'
         link='https://www.linkedin.com/in/alejandrocristm/'
         sw='true'
