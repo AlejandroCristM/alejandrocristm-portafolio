@@ -1,6 +1,6 @@
 import React from 'react';
-import { GoMortarBoard, GoCode, GoVerified } from 'react-icons/go';
-import IconText from 'components/IconText';
+import { GoMortarBoard, GoCode, GoVerified, GoBriefcase } from 'react-icons/go';
+import IconText from 'components/atoms/IconText';
 
 export default function IconTitleText({
   icon,
@@ -43,6 +43,11 @@ export default function IconTitleText({
       case 'certification':
         return (
           <IconText icon={<GoVerified className={iconStyle} />} text={title} />
+        );
+
+      case 'job':
+        return (
+          <IconText icon={<GoBriefcase className={iconStyle} />} text={title} />
         );
 
       default:
