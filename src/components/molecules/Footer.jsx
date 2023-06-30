@@ -2,7 +2,7 @@ import React from 'react';
 import { GoMarkGithub } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
-import IconText from 'components/IconText';
+import IconText from 'components/atoms/IconText';
 
 export default function Footer() {
   return (

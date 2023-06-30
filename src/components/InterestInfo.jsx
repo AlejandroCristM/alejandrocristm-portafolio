@@ -1,5 +1,5 @@
 import React from 'react';
-import DetailText from 'components/DetailText';
+import DetailText from 'components/atoms/DetailText';
 import { useTranslation } from 'react-i18next';
 
 export default function InterestInfo() {

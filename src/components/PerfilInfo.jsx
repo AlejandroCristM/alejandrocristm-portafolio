@@ -5,7 +5,7 @@ import { SiGmail } from 'react-icons/si';
 
 import foto from 'assets/images/Me.jpeg';
 import 'styles/PerfilInfo.css';
-import DetailText from 'components/DetailText';
+import DetailText from 'components/atoms/DetailText';
 
 import { useTranslation } from 'react-i18next';
 

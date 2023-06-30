@@ -1,5 +1,5 @@
 import React from 'react';
-import IconTitleText from 'components/IconTitleText';
+import IconTitleText from 'components/atoms/IconTitleText';
 import { useTranslation } from 'react-i18next';
 
 export default function WorkExpInfo() {
