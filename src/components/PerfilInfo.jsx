@@ -21,8 +21,8 @@ export default function PerfilInfo() {
 
   return (
     <section className='flex flex-col text-center lg:flex-row'>
-      <section className='flex flex-col lg:w-2/3'>
-        <h1 className='text-xl mt-14 font-bold'>Alejandro Cristancho Medina</h1>
+      <section className='flex flex-col mt-5 lg:w-2/3'>
+        <h1 className='text-xl font-bold'>Alejandro Cristancho Medina</h1>
         <picture className='flex flex-col items-center rounded-full px-5'>
           <img
             src={foto}
@@ -56,7 +56,7 @@ export default function PerfilInfo() {
           <p className='w-3/4 mt-2 md:w-3/5 lg:w-full'>{t('textAboutMe')}</p>
         </article>
         <div className='flex justify-center mt-5'>
-          <DetailText detail='Ingles' color='blue' textColor='platinium' />
+          <DetailText detail='English' color='blue' textColor='platinium' />
           <DetailText detail='Español (N)' color='blue' textColor='platinium' />
         </div>
       </section>
