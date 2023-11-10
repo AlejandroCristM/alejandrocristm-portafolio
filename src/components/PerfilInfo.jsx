@@ -12,25 +12,25 @@ import { useTranslation } from 'react-i18next';
 export default function PerfilInfo() {
   const { t } = useTranslation();
 
-  const birthDate = new Date('01/05/2002');
-  const todayDate = new Date();
-
-  const totalYears = Math.floor(
-    (todayDate.getTime() - birthDate.getTime()) / (1000 * 60 * 60 * 24 * 365)
-  );
-
   return (
     <section className='flex flex-col text-center lg:flex-row'>
-      <section className='flex flex-col mt-5 lg:w-2/3'>
-        <h1 className='text-xl font-bold'>Alejandro Cristancho Medina</h1>
+      <section className='flex flex-col mx-1 lg:w-2/3'>
         <picture className='flex flex-col items-center rounded-full px-5'>
           <img
             src={foto}
-            className=' w-1/2 rounded-full md:w-1/3 lg:w-2/5'
+            className='w-52 rounded-full md:w-1/3 lg:w-2/5'
             alt='Foto personal'
           />
         </picture>
-        <h3 className='mt-2'>{`${totalYears} ${t('age')}`}</h3>
+        <h1 className='mt-3.5	font-extrabold	text-2xl tracking-tighter'>
+          {t('position')}
+        </h1>
+        <h2 className='text-xl font-semibold tracking-tight text-green'>
+          Frontend
+        </h2>
+        <h3 className='mt-3.5 text-xl font-medium	tracking-tight'>
+          {t('shortAboutMe')}
+        </h3>
         <div className='flex font-medium justify-center mt-3'>
           <a
             href='https://github.com/AlejandroCristM'
