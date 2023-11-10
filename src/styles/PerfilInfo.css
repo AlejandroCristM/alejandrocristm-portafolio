@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .icon {
-  @apply mx-8 h-5 w-5;
+  @apply h-5 w-5;
 }
