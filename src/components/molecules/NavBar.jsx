@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <section className='m-3 flex items-center justify-between md:mx-10'>
+    <section className='flex items-center justify-between md:mx-10'>
       <div className='w-1/2 md:w-1/3'>
         <img src={Logo} alt='Logo' />
       </div>
