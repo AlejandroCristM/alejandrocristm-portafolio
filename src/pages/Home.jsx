@@ -6,6 +6,7 @@ import PerfilInfo from 'components/PerfilInfo';
 import ProjectsInfo from 'components/ProjectsInfo';
 import WorkExpInfo from 'components/WorkExpInfo';
 import NavBar from 'components/molecules/NavBar';
+import CharacteristicsInfo from 'components/CharacteristicsInfo';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <NavBar />
       <section className='flex flex-col md:mx-20 lg:mx-36'>
         <PerfilInfo />
+        <CharacteristicsInfo />
         <AcademicInfo />
         <div className='lg:hidden'>
           <InterestInfo />

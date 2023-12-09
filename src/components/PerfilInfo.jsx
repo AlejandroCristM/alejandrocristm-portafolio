@@ -13,7 +13,7 @@ export default function PerfilInfo() {
 
   return (
     <section className='flex flex-col text-center mx-1 md:flex-row'>
-      <picture className='flex flex-col justify-center items-center rounded-full px-5 md:w-2/5'>
+      <picture className='flex flex-col justify-center items-center rounded-full px-5 md:justify-start md:items-start md:w-2/5 lg:px-0'>
         <img
           src={foto}
           className='rounded-full w-52 md:w-72'
@@ -21,7 +21,7 @@ export default function PerfilInfo() {
         />
       </picture>
       <section className='flex flex-col content-center px-2 md:w-3/5 md:text-right md:justify-center'>
-        <h1 className='mt-3.5 font-extrabold	text-2xl tracking-tighter md:text-5xl lg:text-7xl'>
+        <h1 className='mt-3.5 font-extrabold	text-2xl tracking-tighter md:text-5xl lg:text-6xl'>
           {t('position')}
         </h1>
         <h2 className='text-xl font-semibold tracking-tight text-green md:text-4xl md:mt-4 lg:text-5xl'>
