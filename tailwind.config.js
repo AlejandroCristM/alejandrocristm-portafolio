@@ -14,9 +14,10 @@ module.exports = {
       platinium: '#E5E5E5',
       white: '#ffffff',
       black: '#000000',
+      green: '#468F28',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Poppins', 'Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {},
