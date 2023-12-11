@@ -2,13 +2,85 @@
     "position": "Desarrollador de Software",
     "age": "años",
     "changeLang": "Translate to English",
-    "shortAboutMe": "Hey! Soy Alejandro Cristancho. Apasionado en encontrar y/o aprender como las soluciones son creadas!",
+    "shortAboutMe": "Hey! Soy Alejandro Cristancho. Apasionado en encontrar soluciones y aprender como son creadas!",
     "textAboutMe":"Soy estudiante de último año universitario, caracterizado por mi disciplina, trabajo en equipo, persistencia y curiosidad por aprender y mejorar mis habilidades. Mi experiencia se basa en diferentes tipos de proyectos y cursos universitarios, en los cuales he logrado excelentes rendimientos, de igual manera en cursos de plataformas autodidactas.",
     "sectionTitles":{
         "academic":"Información académica",
         "interest": "Intereses",
-        "workExp": "Experiencia laboral",
+        "timeline": "Mi trayectoria",
         "projects": "Proyectos",
         "certifications": "Certificaciones"
+    },
+    "info" : {
+        "characteristicsObject": [
+            {
+                "title": "Versatilidad de frameworks",
+                "text": "He tenido la oportunidad de trabajar con varios frameworks frontend, bibliotecas y preprocesadores CSS.",
+                "images": "framework"
+            },
+            {
+                "title": "Aprendizaje continuo",
+                "text": "Disfruto la oportunidad de explorar nuevos horizontes, particularmente Blockchain, computación en la nube y patrones de diseño: Figma.",
+                "images": "learn"
+            }
+        ], 
+        "timelineObject":[
+            {
+                "year": "2017",
+                "title": "Bachillerato",
+                "subtitle": "Gimnasio Campestre",
+                "icon": "school"
+              },
+              {
+                "year": "2018 a 2023",
+                "title": "Ingeniero de Sistemas",
+                "subtitle": "Universidad de Antioquia",
+                "icon": "school"
+              },
+              {
+                "year": "2022 a 2023",
+                "title": "Intern developer",
+                "subtitle": "Rockwell Automation",
+                "icon": "work"
+              },
+              {
+                "year": "2024 a la actualidad",
+                "title": "Software developer",
+                "subtitle": "Rockwell Automation",
+                "icon": "work"
+              }
+        ],
+        "projectsobject": [
+          {
+            "id": 1,
+            "title": "Gistura",
+            "year": "2020",
+            "desc": "Sistema realizado para facilitar la búsqueda y promoción de eventos culturales en el valle de aburrá."
+          },
+          {
+            "id": 2,
+            "title": "Icocinema",
+            "year": "2021-2022",
+            "desc": "Sistema realizado para reducir el tiempo gastado por usuarios del cine al tener que reservar para ver una película."
+          },
+          {
+            "id": 3,
+            "title": "Onboarding platform",
+            "year": "2022",
+            "desc": "(Proyecto integrador con empresa) Sistema útil para onboarding de personal nuevo, principalmente información de la empresa, temas y conceptos claves para su trabajo."
+          },
+          {
+            "id": 4,
+            "title": "Portafolio personal",
+            "year": "2021-act",
+            "desc": "Página web desarrollada como objetivo personal con la finalidad de construir una tarjeta de presentación para alejandrocristm"
+          },
+          {
+            "id": 5,
+            "title": "NFT marketplace",
+            "year": "2021-2023",
+            "desc": "(Proyecto integrador con empresa) Proyecto para compra y venta de NFTs, integrando smart contracts y tecnologías Blockchain"
+          }
+        ]        
     }
 }

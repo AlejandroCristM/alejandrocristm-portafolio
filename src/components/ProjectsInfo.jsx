@@ -4,38 +4,9 @@ import { useTranslation } from 'react-i18next';
 
 export default function ProjectsInfo() {
   const { t } = useTranslation();
-  const projects = [
-    {
-      id: 1,
-      title: 'Gistura',
-      year: '2020',
-      desc: 'Sistema realizado para facilitar la búsqueda y promoción de eventos culturales en el valle de aburrá.',
-    },
-    {
-      id: 2,
-      title: 'Icocinema',
-      year: '2021-2022',
-      desc: 'Sistema realizado para reducir el tiempo gastado por usuarios del cine al tener que reservar para ver una película.',
-    },
-    {
-      id: 3,
-      title: 'Onboarding platform',
-      year: '2022',
-      desc: '(Proyecto integrador con empresa) Sistema útil para onboarding de personal nuevo, principalmente información de la empresa, temas y conceptos claves para su trabajo.',
-    },
-    {
-      id: 4,
-      title: 'Portafolio personal',
-      year: '2021-act',
-      desc: 'Página web desarrollada como objetivo personal con la finalidad de construir una tarjeta de presentación para alejandrocristm',
-    },
-    {
-      id: 5,
-      title: 'NFT marketplace',
-      year: '2021-2023',
-      desc: '(Proyecto integrador con empresa) Proyecto para compra y venta de NFTs, integrando smart contracts y tecnologías Blockchain',
-    },
-  ].map((project) => (
+  const projects = t('info.projectsobject', {
+    returnObjects: true,
+  }).map((project) => (
     <IconTitleText
       component={project}
       key={project.id}

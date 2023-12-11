@@ -7,8 +7,80 @@
     "sectionTitles":{
         "academic":"Academic information",
         "interest": "Interests",
-        "workExp": "Work experience",
+        "timeline": "My Timeline",
         "projects": "Projects",
         "certifications": "certifications"
+    }, 
+    "info" : {
+        "characteristicsObject": [
+            {
+                "title": "Versatile Framework Proficiency",
+                "text": "I have had the opportunity to work with several frontend frameworks, libraries and CSS preprocessors.",
+                "images": "framework"
+            },
+            {
+                "title": "Willingness to learn",
+                "text": "I enjoy the opportunity to explore new horizons particularly Blockchain, cloud computing, and design patterns - Figma.",
+                "images": "learn"
+            }
+        ],
+        "timelineObject":[
+            {
+                "year": "2017",
+               "title": "High school",
+                "subtitle": "Gimnasio Campestre",
+                "icon": "school"
+              },
+              {
+                "year": "2018 to 2023",
+                "title": "Systems engineer",
+                "subtitle": "University of Antioquia",
+                "icon": "school"
+              },
+              {
+                "year": "2022 to 2023",
+               "title": "Intern developer",
+                "subtitle": "Rockwell Automation",
+                "icon": "work"
+              },
+              {
+                "year": "2024 to Currently",
+               "title": "Software developer",
+                "subtitle": "Rockwell Automation",
+                "icon": "work"
+              }
+        ],
+        "projectsobject": [
+          {
+            "id": 1,
+            "title": "Gistura",
+            "year": "2020",
+            "desc": "System created to facilitate the search and promotion of cultural events in the Antioquia."
+          },
+          {
+            "id": 2,
+            "title": "Icocinema",
+            "year": "2021-2022",
+            "desc": "System created to reduce the time spent by cinema users when booking a movie."
+          },
+          {
+            "id": 3,
+            "title": "Onboarding platform",
+            "year": "2022",
+            "desc": "(Integration project with a company) Useful system for onboarding new personnel, providing mainly company information, key topics, and concepts for their work."
+          },
+          {
+            "id": 4,
+            "title": "Personal Portfolio",
+            "year": "2021-present",
+            "desc": "Website developed as a personal goal with the aim of creating a business card for alejandrocristm."
+          },
+          {
+            "id": 5,
+            "title": "NFT Marketplace",
+            "year": "2021-2023",
+            "desc": "(Integration project with a company) Project for buying and selling NFTs, integrating smart contracts and blockchain technologies."
+          }
+        ]
     }
 }
