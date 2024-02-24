@@ -20,11 +20,11 @@ export default function ProjectsInfo() {
   ));
 
   return (
-    <section className='flex flex-col w-full items-center bg-gradient-to-b from-black to-blue-prussian md:bg-gradient-to-b md:from-white md:to-black md:mt-10'>
-      <h2 className='text-l mt-5 py-3 font-bold text-platinium md:text-black'>
+    <section className='flex flex-col w-full items-center mt-3 md:mt-5 gradient-projects-section'>
+      <h2 className='text-center text-4xl font-semibold tracking-tight text-green mt-10 mb-3 md:text-5xl'>
         {t('sectionTitles.projects')}
       </h2>
-      <div className=' flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-center mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-auto'>
+      <div className=' flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-center mt-2 md:mt-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-auto'>
         {projects}
       </div>
     </section>

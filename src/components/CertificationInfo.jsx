@@ -59,7 +59,7 @@ export default function CertificationInfo() {
   ));
 
   return (
-    <section className='flex flex-col w-full p-auto items-center bg-gradient-to-b from-blue-prussian to-white md:bg-gradient-to-b md:from-black md:to-white'>
+    <section className='flex flex-col w-full p-auto items-center bg-black'>
       <h1 className='text-l mt-5 py-3 font-bold text-platinium'>
         {t('sectionTitles.certifications')}
       </h1>

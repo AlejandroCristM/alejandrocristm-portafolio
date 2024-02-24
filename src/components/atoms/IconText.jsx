@@ -1,11 +1,13 @@
 import React from 'react';
 
-export default function IconText({ icon, text, link, sw }) {
+export default function IconText({ icon, bg, textColor, text, link, sw }) {
   // sw => bool which specify if the title component is responsive
+
+  const className = `flex w-full justify-center ${bg} ${textColor}`;
 
   if (sw) {
     return (
-      <div className='flex w-full justify-center'>
+      <div className={className}>
         <a href={link} target='_blank' rel='noreferrer'>
           {icon}
         </a>
@@ -22,7 +24,7 @@ export default function IconText({ icon, text, link, sw }) {
   }
 
   return (
-    <div className='flex w-full justify-center'>
+    <div className={className}>
       <a href={link} target='_blank' rel='noreferrer'>
         {icon}
       </a>
