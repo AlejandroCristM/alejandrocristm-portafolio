@@ -9,7 +9,8 @@
         "interest": "Intereses",
         "timeline": "Mi trayectoria",
         "projects": "Proyectos",
-        "certifications": "Certificaciones"
+        "certifications": "Certificaciones",
+        "aboutme": "Sobre mi"
     },
     "info" : {
         "characteristicsObject": [
@@ -27,7 +28,7 @@
         "timelineObject":[
             {
                 "year": "2017",
-                "title": "Bachillerato",
+                "title": "Bachiller",
                 "subtitle": "Gimnasio Campestre",
                 "icon": "school"
               },
@@ -50,6 +51,7 @@
                 "icon": "work"
               }
         ],
+        "aboutme":"Ingeniero de sistemas, caracterizado por mi disciplina, trabajo en equipo, persistencia y curiosidad por aprender y mejorar mis habilidades. Tengo un año de experiencia como intern developer en Rockwell Automation, donde actualmente estoy trabajando como desarrollador de software.",
         "projectsobject": [
           {
             "id": 1,

@@ -5,6 +5,7 @@ import ProjectsInfo from 'components/ProjectsInfo';
 import TimelineInfo from 'components/TimelineInfo';
 import NavBar from 'components/molecules/NavBar';
 import CharacteristicsInfo from 'components/CharacteristicsInfo';
+import AboutMe from 'components/AboutMe';
 
 export default function Home() {
   return (
@@ -18,13 +19,18 @@ export default function Home() {
         <CharacteristicsInfo />
       </section>
 
-      <article>
-        <TimelineInfo />
-      </article>
+      <section className='flex flex-col md:flex-row px-6 md:px-10 mt-10'>
+        <div className='md:w-1/2'>
+          <TimelineInfo />
+        </div>
+        <div className='md:w-1/2'>
+          <AboutMe />
+        </div>
+      </section>
 
-      <article>
+      <section>
         <ProjectsInfo />
-      </article>
+      </section>
 
       <article>
         <CertificationInfo />

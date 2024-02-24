@@ -21,9 +21,9 @@ export default function ProjectsInfo() {
 
   return (
     <section className='flex flex-col w-full items-center bg-gradient-to-b from-black to-blue-prussian md:bg-gradient-to-b md:from-white md:to-black md:mt-10'>
-      <h1 className='text-l mt-5 py-3 font-bold text-platinium md:text-black'>
+      <h2 className='text-l mt-5 py-3 font-bold text-platinium md:text-black'>
         {t('sectionTitles.projects')}
-      </h1>
+      </h2>
       <div className=' flex flex-no-wrap w-full overflow-x-scroll scrolling-touch items-center mb-4 pb-2 md:flex-wrap md:justify-center md:align-center md:overflow-auto'>
         {projects}
       </div>
